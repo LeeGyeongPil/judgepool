@@ -180,7 +180,7 @@ npm test
 npm run build
 npm run lint
 ```
-테스트 179개가 1초 안팎에 돌아갑니다. 기준값을 다시 만들려면 [uv](https://docs.astral.sh/uv/)(`brew install uv`)가 필요합니다: `cd scripts/ref && uv run python make_ref.py`.
+테스트 183개가 1초 안팎에 돌아갑니다. 기준값을 다시 만들려면 [uv](https://docs.astral.sh/uv/)(`brew install uv`)가 필요합니다: `cd scripts/ref && uv run python make_ref.py`.
 
 버그·제안은 이슈로 남겨 주세요. 변경 기록은 [CHANGELOG.md](CHANGELOG.md).
 

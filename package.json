@@ -1,6 +1,6 @@
 {
   "name": "judgepool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Build a relevance judgment set for RAG retrieval in the browser: pool several retrieval runs, judge blind with the keyboard, compare systems with trec_eval-identical metrics and judged@k pooling-bias warnings.",
   "license": "MIT",
   "type": "module",

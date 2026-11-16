@@ -178,7 +178,7 @@ npm test
 npm run build
 npm run lint
 ```
-179 tests run in about a second. To regenerate the reference values you need [uv](https://docs.astral.sh/uv/) (`brew install uv`): `cd scripts/ref && uv run python make_ref.py`.
+183 tests run in about a second. To regenerate the reference values you need [uv](https://docs.astral.sh/uv/) (`brew install uv`): `cd scripts/ref && uv run python make_ref.py`.
 
 Bugs and ideas are welcome as issues. Changes are listed in [CHANGELOG.md](CHANGELOG.md).
 

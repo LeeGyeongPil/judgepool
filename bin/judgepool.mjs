@@ -41,8 +41,25 @@ export const CSP = [
   "frame-ancestors 'none'",
 ].join('; ')
 
+/** Find a valid `--lang en|ko` / `--lang=en|ko` anywhere in argv (last one wins); other values are ignored. */
+function scanLang(argv) {
+  let found
+  for (let i = 0; i < argv.length; i++) {
+    const v = argv[i] === '--lang' ? argv[i + 1] : argv[i].startsWith('--lang=') ? argv[i].slice(7) : undefined
+    if (v === 'en' || v === 'ko') found = v
+  }
+  return found
+}
+
 /** Parse argv. Returns { options } or { error: { key, vars } }; never exits. */
 export function parseArgs(argv) {
+  const result = parseArgsInner(argv)
+  // On an early error the rest of argv was not read; still honour --lang so the message uses it.
+  if (result.error && result.options.lang === undefined) result.options.lang = scanLang(argv)
+  return result
+}
+
+function parseArgsInner(argv) {
   const options = { port: DEFAULT_PORT, host: '127.0.0.1', dir: undefined, lang: undefined, help: false, version: false }
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]

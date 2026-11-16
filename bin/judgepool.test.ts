@@ -142,6 +142,26 @@ describe('argument parsing', () => {
   })
 })
 
+describe('--lang after an invalid option', () => {
+  test.each([
+    [['--port', 'abc', '--lang', 'en']],
+    [['--port', 'abc', '--lang=en']],
+    [['--bogus', '--lang', 'en']],
+  ])('%j reports the error in English under LANG=ko_KR', async (argv) => {
+    expect(parseArgs(argv).options.lang).toBe('en')
+    const err: string[] = []
+    const code = await main(argv, { LANG: 'ko_KR.UTF-8' }, { out: () => {}, err: (s: string) => err.push(s) })
+    expect(code).toBe(2)
+    expect(err.join('\n')).toMatch(/^(Invalid port|Unknown option)/)
+  })
+
+  test('invalid --lang value is ignored and keeps the original error', () => {
+    const r = parseArgs(['--port', 'abc', '--lang', 'fr'])
+    expect(r.error?.key).toBe('err.bad_port')
+    expect(r.options.lang).toBeUndefined()
+  })
+})
+
 describe('main()', () => {
   const capture = () => {
     const out: string[] = []
