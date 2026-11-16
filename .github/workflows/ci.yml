@@ -1,0 +1,24 @@
+# Tests and the static build. judgepool makes no model or network calls, so
+# there is no mock mode: every test runs for real.
+name: ci
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 3 * * 1"   # weekly: catches dependency or runtime changes that break the build
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - run: npm run lint
+      - name: Packed tarball contains the built app
+        run: npm pack --dry-run --json | grep -q "dist/index.html"
