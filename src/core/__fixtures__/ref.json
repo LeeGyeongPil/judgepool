@@ -1,0 +1,788 @@
+{
+ "versions": {
+  "ir-measures": "0.4.3",
+  "pytrec-eval-terrier": "0.5.11"
+ },
+ "cases": [
+  {
+   "name": "probe-runA",
+   "qrels": "probe_qrels.txt",
+   "run": "src/core/__fixtures__/probe_runA.txt",
+   "k": 3,
+   "common": {
+    "recall2": 0.25,
+    "ndcg": 0.434909,
+    "recall": 0.416667,
+    "judged": 0.666667,
+    "rr": 0.75,
+    "precision2": 0.166667,
+    "rr2": 0.5,
+    "precision": 0.333333
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 0.333333,
+     "recall": 0.333333,
+     "ndcg": 0.630006,
+     "rr2": 1.0,
+     "precision2": 0.333333,
+     "recall2": 0.5,
+     "judged": 0.666667
+    },
+    "q2": {
+     "rr": 0.5,
+     "precision": 0.333333,
+     "recall": 0.5,
+     "ndcg": 0.239812,
+     "rr2": 0.0,
+     "precision2": 0.0,
+     "recall2": 0.0,
+     "judged": 0.666667
+    }
+   },
+   "trec": {
+    "ndcg": 0.434909,
+    "recall": 0.416666,
+    "precision": 0.333333,
+    "rr": 0.75,
+    "judged": 0.666667,
+    "recall2": 0.25,
+    "precision2": 0.166666,
+    "rr2": 0.5
+   }
+  },
+  {
+   "name": "probe-runB",
+   "qrels": "probe_qrels.txt",
+   "run": "src/core/__fixtures__/probe_runB.txt",
+   "k": 3,
+   "common": {
+    "recall2": 1.0,
+    "ndcg": 0.933752,
+    "recall": 1.0,
+    "judged": 1.0,
+    "rr": 1.0,
+    "precision2": 0.5,
+    "rr2": 1.0,
+    "precision": 0.833333
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "ndcg": 0.867503,
+     "rr2": 1.0,
+     "precision2": 0.666667,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q2": {
+     "rr": 1.0,
+     "precision": 0.666667,
+     "recall": 1.0,
+     "ndcg": 1.0,
+     "rr2": 1.0,
+     "precision2": 0.333333,
+     "recall2": 1.0,
+     "judged": 1.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.933752,
+    "recall": 1.0,
+    "precision": 0.833333,
+    "rr": 1.0,
+    "judged": 1.0,
+    "recall2": 1.0,
+    "precision2": 0.5,
+    "rr2": 1.0
+   }
+  },
+  {
+   "name": "edge",
+   "qrels": "edge_qrels.txt",
+   "run": "src/core/__fixtures__/edge_run.txt",
+   "k": 3,
+   "common": {
+    "recall2": 0.466667,
+    "ndcg": 0.433934,
+    "recall": 0.5,
+    "judged": 0.666667,
+    "rr": 0.5,
+    "precision2": 0.2,
+    "rr2": 0.4,
+    "precision": 0.4
+   },
+   "per_query": {
+    "e1": {
+     "rr": 1.0,
+     "precision": 0.666667,
+     "recall": 0.5,
+     "ndcg": 0.549766,
+     "rr2": 0.5,
+     "precision2": 0.333333,
+     "recall2": 0.333333,
+     "judged": 0.666667
+    },
+    "e2": {
+     "rr": 1.0,
+     "precision": 0.666667,
+     "recall": 1.0,
+     "ndcg": 0.950234,
+     "rr2": 1.0,
+     "precision2": 0.333333,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "e3": {
+     "rr": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "ndcg": 0.0,
+     "rr2": 0.0,
+     "precision2": 0.0,
+     "recall2": 0.0,
+     "judged": 0.666667
+    },
+    "e4": {
+     "rr": 0.5,
+     "precision": 0.666667,
+     "recall": 1.0,
+     "ndcg": 0.669672,
+     "rr2": 0.5,
+     "precision2": 0.333333,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "e5": {
+     "precision2": 0.0,
+     "precision": 0.0,
+     "recall2": 0.0,
+     "recall": 0.0,
+     "rr": 0.0,
+     "rr2": 0.0,
+     "ndcg": 0.0,
+     "judged": 0.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.542418,
+    "recall": 0.625,
+    "precision": 0.5,
+    "rr": 0.625,
+    "judged": 0.833333,
+    "recall2": 0.583333,
+    "precision2": 0.25,
+    "rr2": 0.5
+   }
+  },
+  {
+   "name": "edge",
+   "qrels": "edge_qrels.txt",
+   "run": "src/core/__fixtures__/edge_run.txt",
+   "k": 5,
+   "common": {
+    "recall2": 0.6,
+    "precision2": 0.2,
+    "rr": 0.5,
+    "rr2": 0.4,
+    "recall": 0.6,
+    "precision": 0.32,
+    "judged": 0.593333,
+    "ndcg": 0.483061
+   },
+   "per_query": {
+    "e1": {
+     "rr2": 0.5,
+     "precision2": 0.6,
+     "recall2": 1.0,
+     "ndcg": 0.795401,
+     "rr": 1.0,
+     "precision": 0.8,
+     "recall": 1.0,
+     "judged": 0.8
+    },
+    "e2": {
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "ndcg": 0.950234,
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "judged": 0.75
+    },
+    "e3": {
+     "rr2": 0.0,
+     "precision2": 0.0,
+     "recall2": 0.0,
+     "ndcg": 0.0,
+     "rr": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "judged": 0.666667
+    },
+    "e4": {
+     "rr2": 0.5,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "ndcg": 0.669672,
+     "rr": 0.5,
+     "precision": 0.4,
+     "recall": 1.0,
+     "judged": 0.75
+    },
+    "e5": {
+     "precision2": 0.0,
+     "precision": 0.0,
+     "recall2": 0.0,
+     "recall": 0.0,
+     "rr": 0.0,
+     "rr2": 0.0,
+     "ndcg": 0.0,
+     "judged": 0.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.603827,
+    "recall": 0.75,
+    "precision": 0.4,
+    "rr": 0.625,
+    "judged": 0.741667,
+    "recall2": 0.75,
+    "precision2": 0.25,
+    "rr2": 0.5
+   }
+  },
+  {
+   "name": "example-biased-bm25",
+   "qrels": "example_biased_qrels.txt",
+   "run": "src/example/bm25.run",
+   "k": 10,
+   "common": {
+    "judged": 1.0,
+    "precision": 0.3,
+    "rr": 1.0,
+    "recall2": 1.0,
+    "precision2": 0.133333,
+    "ndcg": 0.943786,
+    "rr2": 0.916667,
+    "recall": 1.0
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 1.0,
+     "ndcg": 0.821314,
+     "rr2": 0.5,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q2": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 1.0,
+     "ndcg": 1.0,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q3": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.908649,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q4": {
+     "rr": 1.0,
+     "precision": 0.2,
+     "recall": 1.0,
+     "ndcg": 1.0,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q5": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.932751,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q6": {
+     "rr": 1.0,
+     "precision": 0.2,
+     "recall": 1.0,
+     "ndcg": 1.0,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 1.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.943786,
+    "recall": 1.0,
+    "precision": 0.3,
+    "rr": 1.0,
+    "judged": 1.0,
+    "recall2": 1.0,
+    "precision2": 0.133333,
+    "rr2": 0.916667
+   }
+  },
+  {
+   "name": "example-biased-dense",
+   "qrels": "example_biased_qrels.txt",
+   "run": "src/example/dense.run",
+   "k": 10,
+   "common": {
+    "judged": 0.316667,
+    "precision": 0.2,
+    "rr": 0.541667,
+    "recall2": 0.833333,
+    "precision2": 0.116667,
+    "ndcg": 0.554846,
+    "rr2": 0.472222,
+    "recall": 0.666667
+   },
+   "per_query": {
+    "q1": {
+     "rr": 0.25,
+     "precision": 0.1,
+     "recall": 0.333333,
+     "ndcg": 0.104257,
+     "rr2": 0.0,
+     "precision2": 0.0,
+     "recall2": 0.0,
+     "judged": 0.2
+    },
+    "q2": {
+     "rr": 0.5,
+     "precision": 0.2,
+     "recall": 0.666667,
+     "ndcg": 0.562456,
+     "rr2": 0.5,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.3
+    },
+    "q3": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 0.75,
+     "ndcg": 0.91414,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "judged": 0.4
+    },
+    "q4": {
+     "rr": 0.5,
+     "precision": 0.2,
+     "recall": 1.0,
+     "ndcg": 0.586883,
+     "rr2": 0.333333,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.3
+    },
+    "q5": {
+     "rr": 0.5,
+     "precision": 0.3,
+     "recall": 0.75,
+     "ndcg": 0.640047,
+     "rr2": 0.5,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "judged": 0.4
+    },
+    "q6": {
+     "rr": 0.5,
+     "precision": 0.1,
+     "recall": 0.5,
+     "ndcg": 0.521296,
+     "rr2": 0.5,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.3
+    }
+   },
+   "trec": {
+    "ndcg": 0.554847,
+    "recall": 0.666667,
+    "precision": 0.2,
+    "rr": 0.541667,
+    "judged": 0.316667,
+    "recall2": 0.833333,
+    "precision2": 0.116667,
+    "rr2": 0.472222
+   }
+  },
+  {
+   "name": "example-biased-hybrid",
+   "qrels": "example_biased_qrels.txt",
+   "run": "src/example/hybrid.run",
+   "k": 10,
+   "common": {
+    "judged": 0.633333,
+    "precision": 0.3,
+    "rr": 1.0,
+    "recall2": 1.0,
+    "precision2": 0.133333,
+    "ndcg": 0.952769,
+    "rr2": 1.0,
+    "recall": 1.0
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 1.0,
+     "ndcg": 0.940915,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.6
+    },
+    "q2": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 1.0,
+     "ndcg": 0.940915,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.6
+    },
+    "q3": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.992475,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "judged": 0.7
+    },
+    "q4": {
+     "rr": 1.0,
+     "precision": 0.2,
+     "recall": 1.0,
+     "ndcg": 0.96394,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.6
+    },
+    "q5": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.914429,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 1.0,
+     "judged": 0.7
+    },
+    "q6": {
+     "rr": 1.0,
+     "precision": 0.2,
+     "recall": 1.0,
+     "ndcg": 0.96394,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 1.0,
+     "judged": 0.6
+    }
+   },
+   "trec": {
+    "ndcg": 0.952769,
+    "recall": 1.0,
+    "precision": 0.3,
+    "rr": 1.0,
+    "judged": 0.633333,
+    "recall2": 1.0,
+    "precision2": 0.133333,
+    "rr2": 1.0
+   }
+  },
+  {
+   "name": "example-full-bm25",
+   "qrels": "example_full_qrels.txt",
+   "run": "src/example/bm25.run",
+   "k": 10,
+   "common": {
+    "judged": 1.0,
+    "precision": 0.3,
+    "rr": 1.0,
+    "recall2": 0.430556,
+    "precision2": 0.133333,
+    "ndcg": 0.616432,
+    "rr2": 0.916667,
+    "recall": 0.616667
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 0.5,
+     "ndcg": 0.424247,
+     "rr2": 0.5,
+     "precision2": 0.1,
+     "recall2": 0.25,
+     "judged": 1.0
+    },
+    "q2": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 0.6,
+     "ndcg": 0.615609,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 0.333333,
+     "judged": 1.0
+    },
+    "q3": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 0.8,
+     "ndcg": 0.78856,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 0.666667,
+     "judged": 1.0
+    },
+    "q4": {
+     "rr": 1.0,
+     "precision": 0.2,
+     "recall": 0.5,
+     "ndcg": 0.574199,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 0.333333,
+     "judged": 1.0
+    },
+    "q5": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 0.8,
+     "ndcg": 0.721776,
+     "rr2": 1.0,
+     "precision2": 0.2,
+     "recall2": 0.666667,
+     "judged": 1.0
+    },
+    "q6": {
+     "rr": 1.0,
+     "precision": 0.2,
+     "recall": 0.5,
+     "ndcg": 0.574199,
+     "rr2": 1.0,
+     "precision2": 0.1,
+     "recall2": 0.333333,
+     "judged": 1.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.616432,
+    "recall": 0.616667,
+    "precision": 0.3,
+    "rr": 1.0,
+    "judged": 1.0,
+    "recall2": 0.430556,
+    "precision2": 0.133333,
+    "rr2": 0.916667
+   }
+  },
+  {
+   "name": "example-full-dense",
+   "qrels": "example_full_qrels.txt",
+   "run": "src/example/dense.run",
+   "k": 10,
+   "common": {
+    "judged": 1.0,
+    "precision": 0.383333,
+    "rr": 1.0,
+    "recall2": 0.958333,
+    "precision2": 0.3,
+    "ndcg": 0.916213,
+    "rr2": 1.0,
+    "recall": 0.802778
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 0.666667,
+     "ndcg": 0.79071,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 0.75,
+     "judged": 1.0
+    },
+    "q2": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 0.8,
+     "ndcg": 0.94235,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q3": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 0.8,
+     "ndcg": 0.94235,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q4": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.947626,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q5": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 0.8,
+     "ndcg": 0.94235,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q6": {
+     "rr": 1.0,
+     "precision": 0.3,
+     "recall": 0.75,
+     "ndcg": 0.931892,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.916213,
+    "recall": 0.802778,
+    "precision": 0.383333,
+    "rr": 1.0,
+    "judged": 1.0,
+    "recall2": 0.958333,
+    "precision2": 0.3,
+    "rr2": 1.0
+   }
+  },
+  {
+   "name": "example-full-hybrid",
+   "qrels": "example_full_qrels.txt",
+   "run": "src/example/hybrid.run",
+   "k": 10,
+   "common": {
+    "judged": 1.0,
+    "precision": 0.466667,
+    "rr": 1.0,
+    "recall2": 0.958333,
+    "precision2": 0.3,
+    "ndcg": 0.962916,
+    "rr2": 1.0,
+    "recall": 0.972222
+   },
+   "per_query": {
+    "q1": {
+     "rr": 1.0,
+     "precision": 0.5,
+     "recall": 0.833333,
+     "ndcg": 0.830415,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 0.75,
+     "judged": 1.0
+    },
+    "q2": {
+     "rr": 1.0,
+     "precision": 0.5,
+     "recall": 1.0,
+     "ndcg": 0.989669,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q3": {
+     "rr": 1.0,
+     "precision": 0.5,
+     "recall": 1.0,
+     "ndcg": 0.989669,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q4": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.989037,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q5": {
+     "rr": 1.0,
+     "precision": 0.5,
+     "recall": 1.0,
+     "ndcg": 0.989669,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    },
+    "q6": {
+     "rr": 1.0,
+     "precision": 0.4,
+     "recall": 1.0,
+     "ndcg": 0.989037,
+     "rr2": 1.0,
+     "precision2": 0.3,
+     "recall2": 1.0,
+     "judged": 1.0
+    }
+   },
+   "trec": {
+    "ndcg": 0.962916,
+    "recall": 0.972222,
+    "precision": 0.466667,
+    "rr": 1.0,
+    "judged": 1.0,
+    "recall2": 0.958333,
+    "precision2": 0.3,
+    "rr2": 1.0
+   }
+  }
+ ]
+}

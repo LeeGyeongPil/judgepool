@@ -1,0 +1,37 @@
+{"_id":"rec-a","title":"","text":"Recover a deleted note: open Trash in the sidebar, select the note and press Restore. A deleted note stays in Trash for 30 days."}
+{"_id":"rec-b","title":"","text":"Removed something by accident? Everything you discard is kept in the bin for a month, and one tap puts it back in its notebook."}
+{"_id":"rec-c","title":"","text":"Version history keeps earlier copies of every page, so you can roll back to how it looked yesterday or last week."}
+{"_id":"rec-d","title":"","text":"Delete a note by swiping left on it in the list and tapping Delete. Notes in a shared notebook are removed for every member."}
+{"_id":"rec-e","title":"","text":"Emptying the Trash permanently deletes every deleted note and frees up storage. Notes cannot be recovered afterwards."}
+{"_id":"rec-f","title":"","text":"Note templates let you start a new note from a ready-made layout such as meeting minutes or a weekly plan."}
+{"_id":"off-a","title":"","text":"Offline mode: Lumen Notes works without an internet connection. Turn on Available offline for a notebook and edits sync when you reconnect."}
+{"_id":"off-b","title":"","text":"No signal on a flight or in a tunnel? Pages you pinned to your device stay readable and editable, and changes upload once you are back online."}
+{"_id":"off-c","title":"","text":"Sync status shows a small cloud icon; a crossed cloud means changes are waiting to be uploaded."}
+{"_id":"off-d","title":"","text":"Connection problems: if Lumen Notes cannot connect to the server, check your network settings and try again."}
+{"_id":"off-e","title":"","text":"Large attachments download on demand and are not stored on the device unless you pin them."}
+{"_id":"off-f","title":"","text":"Keyboard shortcuts: press Ctrl+N for a new note, Ctrl+F to search, and Ctrl+P to print the current page."}
+{"_id":"shr-a","title":"","text":"Share a notebook: open the notebook menu, choose Share, and enter a teammate's email address. They receive an invitation to join."}
+{"_id":"shr-b","title":"","text":"To let a colleague collaborate, send them an invite from the notebook's people panel and pick whether they can edit or only read."}
+{"_id":"shr-c","title":"","text":"Permission levels: owners manage members, editors change pages, and viewers can only read and comment."}
+{"_id":"shr-d","title":"","text":"Sharing limits: a free workspace can share each notebook with up to five people."}
+{"_id":"shr-e","title":"","text":"Public links let anyone with the link read a page without signing in; turn a link off at any time."}
+{"_id":"shr-f","title":"","text":"Create a notebook from the plus button in the sidebar and pick a cover colour for it."}
+{"_id":"pdf-a","title":"","text":"Export a note to PDF: open the note menu, choose Export, select PDF and save the file to your computer."}
+{"_id":"pdf-b","title":"","text":"Need a printable copy? Use the download option on a page and pick the portable document format, headings and images included."}
+{"_id":"pdf-c","title":"","text":"Markdown export saves a note as a plain text file that other editors can open; images are saved in a folder next to it."}
+{"_id":"pdf-d","title":"","text":"Export limits: exporting an entire notebook at once is available on paid plans and may take a few minutes."}
+{"_id":"pdf-e","title":"","text":"Import notes from other apps by choosing Import in settings and selecting a file."}
+{"_id":"pdf-f","title":"","text":"Page covers: add a banner image at the top of any page from the Cover button."}
+{"_id":"thm-a","title":"","text":"Change the theme: open Settings, choose Appearance and select Dark, Light or System to switch the app to dark mode."}
+{"_id":"thm-b","title":"","text":"Easier on the eyes at night: pick the dim colour scheme in display preferences, or let the app follow your phone's setting."}
+{"_id":"thm-c","title":"","text":"Accent colours and font size can be changed in the same display preferences screen."}
+{"_id":"thm-d","title":"","text":"Theme gallery: browse notebook cover themes such as Paper, Forest and Sunset."}
+{"_id":"thm-e","title":"","text":"Change the app icon on iOS from Settings; a dark variant is included."}
+{"_id":"thm-f","title":"","text":"Spell check works in over forty languages and can be turned off for a notebook."}
+{"_id":"pwd-a","title":"","text":"Reset your password: on the sign-in screen choose Forgot password, enter your email and follow the link we send you."}
+{"_id":"pwd-b","title":"","text":"Locked out of your account? Ask for a recovery message on the login page and set a new secret from the link inside."}
+{"_id":"pwd-c","title":"","text":"Two-step verification protects your account; keep your backup codes somewhere safe in case you lose your phone."}
+{"_id":"pwd-d","title":"","text":"Change your password any time from Account settings; use at least twelve characters for a strong password."}
+{"_id":"pwd-e","title":"","text":"Sign in with Google or Apple instead of creating a password, from the sign-in screen."}
+{"_id":"pwd-f","title":"","text":"Delete your account from Account settings; all notebooks are removed after a 14-day grace period."}
+{"_id":"rec-a2","title":"","text":"Recover a deleted note: open Trash in the sidebar, select the note and press Restore. A deleted note stays in Trash for 30 days."}

@@ -1,0 +1,9 @@
+[project]
+name = "judgepool-ref"
+version = "0.1.0"
+description = "Development-only generator of reference metric values (ir-measures / trec_eval) for judgepool tests."
+requires-python = ">=3.10"
+dependencies = [
+    "ir-measures==0.4.3",
+    "pytrec-eval-terrier==0.5.11",
+]
